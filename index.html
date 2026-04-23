@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rasya Fawwaz — ECE student at UW focused on embedded systems, firmware, and controls."
+    />
+    <title>Rasya Fawwaz — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#">Rasya Fawwaz</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#work">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a
+            href="Rasya_Resume_Embedded%20(3).pdf"
+            download="Rasya_Fawwaz_Resume.pdf"
+            >Resume</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-inner">
+          <p class="eyebrow">Embedded systems &amp; firmware</p>
+          <h1>
+            Hi, I’m Rasya — I work on<br />
+            <span class="accent">hardware, firmware, and controls</span>.
+          </h1>
+          <p class="lede">
+            Electrical &amp; Computer Engineering student at the University of
+            Washington. I build low-level drivers, real-time embedded software,
+            and validation setups from lab bench to vehicle integration.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#work">View projects</a>
+            <a
+              class="btn btn-ghost"
+              href="Rasya_Resume_Embedded%20(3).pdf"
+              download="Rasya_Fawwaz_Resume.pdf"
+              >Download resume</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="container">
+          <header class="section-head">
+            <h2>Projects</h2>
+            <p>
+              From camera-integrated earbuds and VLMs to robotics and BLE
+              firmware on constrained hardware.
+            </p>
+          </header>
+          <div class="grid cards">
+            <article class="card">
+              <a
+                class="card-hit"
+                href="https://dl.acm.org/doi/pdf/10.1145/3772318.3791322"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="VueBuds: open ACM Digital Library PDF (new tab)"
+              ></a>
+              <div class="card-thumb card-thumb--photo">
+                <img
+                  src="img/vuebuds.png"
+                  alt="VueBuds prototype: camera-integrated wireless earbuds"
+                  width="800"
+                  height="450"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-meta">Apr 2025 – Sept 2025</p>
+                <h3>VueBuds</h3>
+                <p>
+                  UW <strong>Mobile Intelligence Lab</strong> RA project:
+                  camera-integrated wireless earbuds that stream ear-level video
+                  to on-device vision–language models for hands-free visual
+                  questions—the same VueBuds / earbuds arc as my resume (BLE
+                  imaging pipeline, dual-camera UART tooling, Python
+                  automation).
+                  <strong>Honorable Mention, CHI &rsquo;26.</strong>
+                  <a href="vuebuds.pdf">Paper (PDF)</a>
+                </p>
+                <ul class="tags">
+                  <li>Wearables</li>
+                  <li>VLMs</li>
+                  <li>BLE</li>
+                </ul>
+              </div>
+            </article>
+            <article class="card">
+              <a
+                class="card_hit"
+                href=""
+                target="_blank">
+
+              </a>
+              <div class="card-thumb card-thumb--b" aria-hidden="true"></div>
+              <div class="card-body">
+                <p class="card-meta">Dec 2025 – Feb 2026</p>
+                <h3>Self-balancing robot</h3>
+                <p>
+                  Modeled dynamics with Euler–Lagrange and simulated in Python;
+                  implemented PID and state-space control in hardware using IMU
+                  feedback. Tuned for under 10% overshoot, ~0.25&nbsp;s rise
+                  time, and near-zero steady-state error.
+                </p>
+                <ul class="tags">
+                  <li>Controls</li>
+                  <li>Python</li>
+                  <li>IMU</li>
+                </ul>
+              </div>
+            </article>
+            <article class="card">
+              <a
+                class="card-hit"
+                href="https://github.com/grgevansdwy/ESP-AirTag"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ESP-32 AirTag: open GitHub repository (new tab)"
+              ></a>
+              <div class="card-thumb card-thumb--photo">
+                <img
+                  src="img/esp32-airtag.jpeg"
+                  alt="ESP32 BLE tracker hardware prototype"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-meta">June 2025 – Sept 2025</p>
+                <h3>ESP-32 AirTag</h3>
+                <p>
+                  Firmware for an ESP32-based tracker using BLE RSSI for
+                  distance estimation; custom SPI/I2C drivers for IMU
+                  configuration and data capture; FreeRTOS task priorities to
+                  align sampling with radio windows while holding ~70% CPU at
+                  peak load.
+                </p>
+                <ul class="tags">
+                  <li>ESP32</li>
+                  <li>FreeRTOS</li>
+                  <li>BLE</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section--alt">
+        <div class="container split">
+          <div>
+            <header class="section-head section-head--left">
+              <h2>About</h2>
+            </header>
+            <p>
+              I’m pursuing a B.S. in Electrical and Computer Engineering at the
+              University of Washington (expected December 2026, GPA 3.84). My
+              work spans teaching digital design on FPGAs, embedded roles in
+              research and industry capstone projects, and hands-on validation
+              with oscilloscopes, CANalyzer, and HIL rigs.
+            </p>
+            <p>
+              Recent roles include embedded engineer on a PACCAR capstone
+              (Simulink motor modeling, CAN validation, harness design, PID for a
+              48&nbsp;V three-phase motor), undergraduate research assistant at
+              the Mobile Intelligence Lab (Apr 2025–Sept 2025 on my resume:
+              VueBuds / camera-integrated earbuds, BLE pipeline optimization,
+              dual-camera UART tooling in Python), and TA support for
+              Verilog/FPGA labs. VueBuds received
+              <strong>Honorable Mention</strong> at CHI &rsquo;26.
+            </p>
+          </div>
+          <aside class="skills" aria-labelledby="skills-title">
+            <h3 id="skills-title">Technical skills</h3>
+            <ul class="skill-list">
+              <li>C/C++, Python, SystemVerilog</li>
+              <li>FreeRTOS, BLE, embedded Linux</li>
+              <li>SPI, I2C, UART, CAN; STM32, ESP32, nRF52</li>
+              <li>MATLAB, Simulink, PID, HIL testing</li>
+              <li>KiCad, Altium, GDB, Git, CMake</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact">
+          <header class="section-head">
+            <h2>Contact</h2>
+            <p>
+              Reach out for internships, research, or embedded roles — resume
+              on file in this folder as PDF.
+            </p>
+          </header>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:m.rasyafawwaz@gmail.com"
+              >Email</a
+            >
+            <a
+              class="btn btn-ghost"
+              href="https://github.com/rasyfwz"
+              rel="noreferrer"
+              target="_blank"
+              >GitHub</a
+            >
+            <a
+              class="btn btn-ghost"
+              href="https://www.linkedin.com/in/rasya-fawwaz-6b8709299/"
+              rel="noreferrer"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a
+              class="btn btn-ghost"
+              href="Rasya_Resume_Embedded%20(3).pdf"
+              download="Rasya_Fawwaz_Resume.pdf"
+              >Resume PDF</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          &copy; 2026 Rasya Fawwaz. Built with plain HTML &amp; CSS.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
